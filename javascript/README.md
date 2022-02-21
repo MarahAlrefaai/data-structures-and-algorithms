@@ -4,7 +4,11 @@
 
 ### Folder and Challenge Setup
 
+
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
+
+### table of content 
+[title](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/main/javascript/arrayReverse/challenge_readme.md)
 
 ### Data Structure: New Implementation
 
