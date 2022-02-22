@@ -8,7 +8,8 @@
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
 
 ### table of content 
-[reverse array](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/main/javascript/arrayReverse/challenge_readme.md)* 
+[reverse array](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/main/javascript/arrayReverse/challenge_readme.md)
+* 
 [insert shift array](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/array-insert-shift/javascript/arrayInsertShift/array-insert-shift.md)
 ### Data Structure: New Implementation
 
