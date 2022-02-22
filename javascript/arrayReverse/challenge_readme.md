@@ -1,5 +1,8 @@
 # Reverse an Array
 <!-- Description of the challenge -->
+get array and return reversed array 
+input : arr-->{1,2,3,4,5}
+output : arr-->{5,4,3,2,1}
 
 ## Whiteboard Process
 ![alttext](/array-reverse.PNG)
