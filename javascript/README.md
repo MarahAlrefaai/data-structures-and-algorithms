@@ -9,8 +9,10 @@ Each type of code challenge has slightly different instructions. Please refer to
 
 ### table of content 
 [reverse array](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/main/javascript/arrayReverse/challenge_readme.md)
-* 
+------------------------------------
 [insert shift array](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/array-insert-shift/javascript/arrayInsertShift/array-insert-shift.md)
+------------------------------------
+[binary search array](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/array-binary-search/javascript/array-binary-search/array-binary-search.md)
 ### Data Structure: New Implementation
 
 - Create a new folder under the `javascript` level, with the name of the data structure and complete your implementation there
