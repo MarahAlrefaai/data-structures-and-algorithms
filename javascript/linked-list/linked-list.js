@@ -33,10 +33,14 @@ append(value) {
 includes(value){
   if(this.head!=null){
   let pointer = this.head;
+
   while (pointer!=null) {
+
     if(pointer.value!=value)
-    pointer = pointer.next;
+  {pointer = pointer.next;}
+
     else return true;}
+    
     return false;
 }
 else return false;

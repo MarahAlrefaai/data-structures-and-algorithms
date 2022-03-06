@@ -15,8 +15,11 @@ toString ===> return all values of the nodes in the linked list
 ## Approach & Efficiency
  What approach did you take?  while loop && if statments 
   Why? to loop through linked list nodes and check for the condition  
-  What is the Big O space/time for this approach? Big O(n)  
-
+  What is the Big O space/time for this approach?
+insert ===>  Big O(3)  
+append ===>  Big O(n)  
+includes ===>  Big O(n)  
+toString ===>  Big O(n)  
 ## API
 <!-- Description of each method publicly available to your Linked List -->
 insert ===> add node to start of linked list
