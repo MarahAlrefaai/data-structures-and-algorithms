@@ -13,7 +13,7 @@ describe('testing Linked List', () => {
     })
 })
 
-describe('insert to the beginning of the LL', () => {
+/*describe('insert to the beginning of the LL', () => {
     // we have two cases
     // 1. if the LL is empty
     it('add to an empty LL', () => {
@@ -32,7 +32,7 @@ describe('insert to the beginning of the LL', () => {
         expect(ll.head.next.value).toEqual('a');
 
     })
-})
+})*/
 
 describe("check if it exists or not ", () => {
 
@@ -45,13 +45,37 @@ describe("check if it exists or not ", () => {
         expect(ll.includes('c')).toBeFalsy();
 
     })
+    it("insert before method ", () => {
+        const ll = new LinkedList();
+        ll.insert(3);
+        ll.insert(2);
+        ll.insert(1);
+        console.log("insert before  : "+ll.toString());
+       ll.insertbefore(1,5);
+       console.log("insert before  : "+ll.toString());
+       expect(ll.toString()).toBe("{ 5 } -> { 1 } -> { 2 } -> { 3 } -> NULL");
+       expect(ll.insertbefore(6,5)).toBe("No change, method exception");
+       //expect(ll.insertbefore(6,5)).toBe("empty");
+    })
+    it("insert after method ", () => {
+        const ll = new LinkedList();
+        ll.insert(3);
+        ll.insert(2);
+        ll.insert(1);
+        console.log("insert after  : "+ll.toString());
+       ll.insertafter(3,5);
+       console.log("insert after  : "+ll.toString());
+       expect(ll.toString()).toBe("{ 1 } -> { 2 } -> { 3 } -> { 5 } -> NULL");
+       expect(ll.insertafter(8,5)).toBe("No change, method exception");
+       //expect(ll.insertbefore(6,5)).toBe("empty");
+    })
 
 })
 
 
 //"{ a } -> { b } -> { c } -> NULL"
 
-describe("get string  ", () => {
+/*describe("get string  ", () => {
 
     it("get string ", () => {
         const ll = new LinkedList();
@@ -63,4 +87,4 @@ describe("get string  ", () => {
 
     })
 
-})
+})*/
