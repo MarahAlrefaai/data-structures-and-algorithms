@@ -16,7 +16,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [Linked List](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/4)
 ------------------------------------
-[Linked List insertions](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/6)
+[Linked List insertions](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/7)
 ------------------------------------
 ### Data Structure: New Implementation
 
