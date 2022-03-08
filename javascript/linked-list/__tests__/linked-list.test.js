@@ -36,7 +36,7 @@ describe('testing Linked List', () => {
 
 describe("check if it exists or not ", () => {
 
-    it("lets check", () => {
+     /*it("lets check", () => {
         const ll = new LinkedList();
         ll.insert('a');
         ll.insert('b');
@@ -57,7 +57,7 @@ describe("check if it exists or not ", () => {
        expect(ll.insertbefore(6,5)).toBe("No change, method exception");
        //expect(ll.insertbefore(6,5)).toBe("empty");
     })
-    it("insert after method ", () => {
+   it("insert after method ", () => {
         const ll = new LinkedList();
         ll.insert(3);
         ll.insert(2);
@@ -68,6 +68,21 @@ describe("check if it exists or not ", () => {
        expect(ll.toString()).toBe("{ 1 } -> { 2 } -> { 3 } -> { 5 } -> NULL");
        expect(ll.insertafter(8,5)).toBe("No change, method exception");
        //expect(ll.insertbefore(6,5)).toBe("empty");
+    })*/
+    it("Kth method ", () => {
+        const ll = new LinkedList();
+        ll.insert(2);
+        ll.insert(8);
+        ll.insert(3);
+        ll.insert(1);
+        console.log("insert after  : "+ll.toString());
+       expect(ll.kth(6)).toBe("exception");
+       expect(ll.kth(2)).toBe(3);
+       expect(ll.kth(0)).toBe(2);
+       expect(ll.kth(3)).toBe(1);
+       expect(ll.kth(1)).toBe(8);
+       expect(ll.kth(-1)).toBe("exception");
+       
     })
 
 })
