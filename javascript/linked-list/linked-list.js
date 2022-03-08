@@ -89,6 +89,35 @@ insertafter(value,newValue){
   else return "No change, method exception";//second if
 }else return "empty";/*first if*/}
 //--------------------------------------------------------------
+//length function
+length(){
+  if(this.head!=null){
+let pointer=this.head;
+let length =0;
+while(pointer !=null)
+{
+  pointer=pointer.next
+  length +=1;
+}
+return length;
+  }
+  else {
+    return 0;
+  }}
+//--------------------------------------------------------------
+//kth function
+kth(k){
+ if(k<0){return "exception";} 
+ if(k>this.length()){return "exception"}
+if(this.head!=null){
+let pointer=this.head;
+let count =this.length()-k-1;
+for(let i=0;i<count;i++)
+{pointer=pointer.next}
+  return pointer.value;
+}
+else {return "empty";}}
+//--------------------------------------------------------------
 //to string 
 toString(){
   let allValues="";
