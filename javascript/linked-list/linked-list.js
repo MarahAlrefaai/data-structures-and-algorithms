@@ -131,8 +131,26 @@ allValues  =allValues+`NULL`;
 return allValues;
 }
 else return "empty list";
-}}
-module.exports = LinkedList;
+}
 
+//--------------------------------------------------------------
+//zipLists
+zipLists(list1 , list2){
+  let p1 = list1.head;
+  let p2 = list2.head;
+  while(list2.head !=null && p1!= null){
+  list2.head=list2.head.next;
+  p2.next=p1.next;
+  p1.next=p2;
+  p2=list2.head;
+  p1=p1.next.next;
 
- 
+  }
+  while( list2.head != null){list1.append(list2.head.value); list2.head=list2.head.next; }
+
+return list1.toString()+"\n"+  list2.toString();
+  }
+  
+}
+
+module.exports = LinkedList; 
