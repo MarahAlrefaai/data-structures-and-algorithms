@@ -69,7 +69,7 @@ describe("check if it exists or not ", () => {
        expect(ll.insertafter(8,5)).toBe("No change, method exception");
        //expect(ll.insertbefore(6,5)).toBe("empty");
     })*/
-    it("Kth method ", () => {
+    /*it("Kth method ", () => {
         const ll = new LinkedList();
         ll.insert(2);
         ll.insert(8);
@@ -83,6 +83,28 @@ describe("check if it exists or not ", () => {
        expect(ll.kth(1)).toBe(8);
        expect(ll.kth(-1)).toBe("exception");
        
+    })*/
+    it("zip method ", () => {
+        const ll1 = new LinkedList();
+        const ll2 = new LinkedList();
+        ll1.insert(3);
+        ll1.insert(2);
+        ll1.insert(1);
+        console.log("l 1   : "+ll1.toString());
+        ll2.insert(6);
+        ll2.insert(5);
+        ll2.insert(4);
+        console.log("l 2   : "+ll2.toString());
+        console.log("final : "+ ll1.zipLists(ll1,ll2));
+
+        //ll1 < ll2
+        //expect(ll1.zipLists(ll1,ll2)).toBe("{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 6 } -> NULL")
+
+        //ll1 > ll2
+        //expect(ll1.zipLists(ll1,ll2)).toBe("{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 3 } -> NULL")
+
+       //ll1 && ll2 equal length
+      // expect(ll1.zipLists(ll1,ll2)).toBe("{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 3 } -> { 6 } -> NULL")
     })
 
 })
