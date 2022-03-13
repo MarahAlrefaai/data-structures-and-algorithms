@@ -20,7 +20,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [Linked List Kth](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/8)
 ------------------------------------
-[Linked List Zip](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/9)
+[Linked List Zip](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/10)
 ------------------------------------
 ### Data Structure: New Implementation
 
