@@ -87,7 +87,7 @@ describe("check if it exists or not ", () => {
     it("zip method ", () => {
         const ll1 = new LinkedList();
         const ll2 = new LinkedList();
-        ll1.insert(3);
+        //ll1.insert(3);
         ll1.insert(2);
         ll1.insert(1);
         console.log("l 1   : "+ll1.toString());
@@ -95,16 +95,19 @@ describe("check if it exists or not ", () => {
         ll2.insert(5);
         ll2.insert(4);
         console.log("l 2   : "+ll2.toString());
+    
         console.log("final : "+ ll1.zipLists(ll1,ll2));
-
+       
+        console.log("l 1   : "+ll1.toString());
+        //console.log("l 2   : "+ll2.toString());
         //ll1 < ll2
-        //expect(ll1.zipLists(ll1,ll2)).toBe("{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 6 } -> NULL")
-
+        expect(ll1.zipLists(ll1,ll2)).toBe("{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 6 } -> NULL")
+        expect(ll1.length).toBe(6);
         //ll1 > ll2
         //expect(ll1.zipLists(ll1,ll2)).toBe("{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 3 } -> NULL")
 
        //ll1 && ll2 equal length
-      // expect(ll1.zipLists(ll1,ll2)).toBe("{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 3 } -> { 6 } -> NULL")
+       //expect(ll1.zipLists(ll1,ll2)).toBe("{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 3 } -> { 6 } -> NULL")
     })
 
 })
