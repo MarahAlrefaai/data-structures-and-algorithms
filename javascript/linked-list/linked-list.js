@@ -2,8 +2,10 @@
 const Node = require('./node');
 
 class LinkedList {
+  
     constructor() {
         this.head = null;
+        this.length =0;
     }
   
 //--------------------------------------------------------------
@@ -12,9 +14,11 @@ class LinkedList {
     const node = new Node(value);
     if(!this.head) { //means LL is empty null is falsy value (not false)
         this.head = node;
+        this.length++;
     } else { //means LL is not empty
         node.next = this.head;
         this.head = node;
+        this.length++;
     }
 }
 //--------------------------------------------------------------
@@ -23,6 +27,7 @@ append(value) {
   const node = new Node(value);
   if(!this.head) { //means LL is empty
       this.head = node;
+      this.length++;
   } else { //means LL is not empty
       let currentNode = this.head;
 
@@ -30,6 +35,7 @@ append(value) {
           currentNode = currentNode.next;
       }
       currentNode.next = node;
+      this.length++;
   }
 }
  //--------------------------------------------------------------
@@ -57,6 +63,7 @@ insertbefore(value,newValue){
       const node = new Node(newValue);
       node.next=this.head;
       this.head=node;
+      this.length++;
     }
     else{
   if(this.includes(value)){
@@ -67,6 +74,7 @@ insertbefore(value,newValue){
    }
    node.next=pointer.next;
    pointer.next=node;
+   this.length++;
   }
   else return "No change, method exception";//third if
 }
@@ -85,6 +93,7 @@ insertafter(value,newValue){
    }
    node.next=pointer.next;
    pointer.next=node;
+   this.length++;
   }
   else return "No change, method exception";//second if
 }else return "empty";/*first if*/}
@@ -138,19 +147,26 @@ else return "empty list";
 zipLists(list1 , list2){
   let p1 = list1.head;
   let p2 = list2.head;
-  while(list2.head !=null && p1!= null){
+  
+ while(list2.head !=null && p1!= null){
   list2.head=list2.head.next;
   p2.next=p1.next;
   p1.next=p2;
   p2=list2.head;
   p1=p1.next.next;
-
+list2.length=list2.length-1;
+list1.length=list1.length+1;
   }
-  while( list2.head != null){list1.append(list2.head.value); list2.head=list2.head.next; }
+  //list2.head != null
+ if(list2.length>=1){
+  list1.append(list2.head.value);
+  list2.head=list2.head.next;
+  list2.length=list2.length-1;
+  list1.length=list1.length+1;}
 
-return list1.toString()+"\n"+  list2.toString();
-  }
-  
+return list1.toString(); }
+
 }
+
 
 module.exports = LinkedList; 
