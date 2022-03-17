@@ -20,7 +20,6 @@ enqueue(newvalue){
  this.length++;
  }
  else{
-  
   this.rear.next=node;
   this.rear=this.rear.next;
    this.length++;
