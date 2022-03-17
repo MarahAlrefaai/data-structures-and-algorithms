@@ -21,6 +21,8 @@ describe('enqueue pseudoQueue', () => {
     console.log("after add to pseudoqueue"+pseudoqueue.stack1.tostring()); 
     
     pseudoqueue.dequeue();
+    pseudoqueue.dequeue();
+    
     console.log("after delete 11111 to pseudoqueue"+pseudoqueue.stack1.tostring()); 
     console.log("after delete 22222 to pseudoqueue"+pseudoqueue.stack2.tostring()); 
     
