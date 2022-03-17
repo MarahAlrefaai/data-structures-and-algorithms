@@ -24,6 +24,8 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [stack-queue](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/13)
 ------------------------------------
+[pseudoqueue](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/14)
+------------------------------------
 ### Data Structure: New Implementation
 
 - Create a new folder under the `javascript` level, with the name of the data structure and complete your implementation there
