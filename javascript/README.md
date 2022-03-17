@@ -24,7 +24,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [stack-queue](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/13)
 ------------------------------------
-[pseudoqueue](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/14)
+[pseudoqueue](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/15)
 ------------------------------------
 ### Data Structure: New Implementation
 
