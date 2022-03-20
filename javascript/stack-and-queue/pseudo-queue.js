@@ -20,6 +20,5 @@ dequeue(){
   this.stack2.push(this.stack1.peek());
   this.stack1.pop();}
  }
-
 }
 module.exports = pseudoQueue; 
