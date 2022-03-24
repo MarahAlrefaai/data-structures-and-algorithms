@@ -8,6 +8,7 @@ class AnimalShelter {
 //------------------------------------------
 //enqueue
 enqueue(animal){
+  
 if(typeof animal=="object"){ this.queue.enqueue(animal); }
 else{ return "its not an object";   }}
 //-------------------------------------
