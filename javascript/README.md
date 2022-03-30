@@ -28,7 +28,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [AnimalShelterQueue](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/21)
 ------------------------------------
-[validate-brackets](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/20)
+[validate-brackets](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/22)
 ------------------------------------
 ### Data Structure: New Implementation
 
