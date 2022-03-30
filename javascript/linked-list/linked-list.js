@@ -165,6 +165,25 @@ list1.length=list1.length+1;
   list1.length=list1.length+1;}
 
 return list1.toString(); }
+//-----------------------------------------------
+//palindrome
+palindrome(){
+let p1=this.head;
+let list2=new LinkedList();
+let p2=list2.head;
+while(p1!=null){
+ list2.insert(p1.value);
+ p1=p1.next;}
+p1=this.head;
+p2=list2.head;
+while(p1!=null){
+  if(p1.value == p2.value){
+  p1=p1.next;
+  p2=p2.next;
+  } else{return false;}
+ } return true;}
+
+ 
 
 }
 

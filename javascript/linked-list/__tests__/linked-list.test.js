@@ -110,12 +110,26 @@ describe("check if it exists or not ", () => {
        //expect(ll1.zipLists(ll1,ll2)).toBe("{ 1 } -> { 4 } -> { 2 } -> { 5 } -> { 3 } -> { 6 } -> NULL")
     })
 
+
+
+    it("palindrome method ", () => {
+        const ll1 = new LinkedList();
+        ll1.insert('m');
+        ll1.insert('o');
+        ll1.insert('o');
+        ll1.insert('m');
+      expect(ll1.palindrome()).toBe(true)
+      //expect(ll1.palindrome()).toBe(false)
+     })
+       
+    
+
 })
 
 
 //"{ a } -> { b } -> { c } -> NULL"
 
-/*describe("get string  ", () => {
+describe("get string  ", () => {
 
     it("get string ", () => {
         const ll = new LinkedList();
@@ -127,4 +141,4 @@ describe("check if it exists or not ", () => {
 
     })
 
-})*/
+})
