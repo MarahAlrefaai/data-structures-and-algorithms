@@ -47,6 +47,20 @@ class BinaryTree {
         recTraverse(this.root)
         return arr;
     }
+    maximmum(){
+
+        let arr = this.inOrder();
+        let max = 0,count=0;
+
+    while(count < arr.length) {
+        if (arr[count]>max) {
+            max = arr[count];
+        }
+        count++;
+     }
+     return max;
+    }
+    
 }
 
 class binarySearchTree extends BinaryTree {
@@ -100,6 +114,7 @@ class binarySearchTree extends BinaryTree {
         }
         return false
     }
+   
 }
 module.exports = {
     BinaryTree: BinaryTree,
