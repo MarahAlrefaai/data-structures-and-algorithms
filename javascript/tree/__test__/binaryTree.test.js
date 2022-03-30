@@ -3,7 +3,6 @@ const { BinaryTree } = require('../binaryTree');
 const node = require('../node');
 
 let testTree = null;
-
 describe('testing BinaryTree',()=>{
     beforeAll( ()=>{
         const node1 = new node(1);
@@ -39,4 +38,7 @@ describe('testing BinaryTree',()=>{
         let output = [4,5,2,3,1];
         expect(testTree.postOrder()).toEqual(output)
     })  
+    it('test max ',()=>{
+        expect(testTree.maximmum()).toEqual(5)
+     })
 })
