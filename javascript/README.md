@@ -34,6 +34,8 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [binary tree max function  ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/24)
 ------------------------------------
+[binary tree breadthFirst function  ]https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/25)
+------------------------------------
 ### Data Structure: New Implementation
 
 - Create a new folder under the `javascript` level, with the name of the data structure and complete your implementation there
