@@ -46,9 +46,9 @@ describe('testing BinaryTree',()=>{
         node1.right=node3;
         let node4 = new node(4);
         node2.left=node4;
-        let output = [1, 2, 3, 4];
+        let arr = [1, 2, 3, 4];
         let newRR=tree3.breadthFirst();
         console.log(newRR);
-        expect(newRR).toEqual(output);
+        expect(newRR).toEqual(arr);
       });
 })
