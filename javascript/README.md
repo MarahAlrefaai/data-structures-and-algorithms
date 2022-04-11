@@ -30,7 +30,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [validate-brackets](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/22)
 ------------------------------------
-[binary tree ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/23)
+[binary tree ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/26)
 ------------------------------------
 [binary tree max function  ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/24)
 ------------------------------------
