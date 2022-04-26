@@ -1,6 +1,6 @@
 ### Sorting array 
 ---
-![alt text](day26.jpg)
+![alt text](sorting.jpg)
 ####  code :
 ```
 let  n = arr.length ;
