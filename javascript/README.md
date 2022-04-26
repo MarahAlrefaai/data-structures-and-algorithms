@@ -34,7 +34,9 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [binary tree max function  ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/24)
 ------------------------------------
-[binary tree breadthFirst function  ]https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/25)
+[binary tree breadthFirst function  ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/25)
+------------------------------------
+[tracking code for sorting array   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/28)
 ------------------------------------
 ### Data Structure: New Implementation
 
