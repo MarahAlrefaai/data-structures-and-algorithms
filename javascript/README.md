@@ -38,6 +38,8 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [tracking code for sorting array   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/28)
 ------------------------------------
+[tracking code for QuickSort array   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/29)
+------------------------------------
 ### Data Structure: New Implementation
 
 - Create a new folder under the `javascript` level, with the name of the data structure and complete your implementation there
