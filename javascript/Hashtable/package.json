@@ -1,0 +1,16 @@
+{
+  "name": "hashtable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Hashtable.js",
+  "scripts": {
+    "start": "node HashTable.js",
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.0"
+  }
+}
