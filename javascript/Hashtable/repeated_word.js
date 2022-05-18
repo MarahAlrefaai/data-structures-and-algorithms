@@ -4,10 +4,12 @@ function count(text){
 
   let arrWords = text.split(" ");
    let mappingWords = {};
- 
+ let cc=0;
    for (let i = 0; i < arrWords.length; i++) {
      let counter = mappingWords[arrWords[i]];
+     
      let appearence = counter ? counter : 0;
+     if(appearence>1){break}
      mappingWords[arrWords[i]] = appearence + 1;
    }
    return mappingWords;
