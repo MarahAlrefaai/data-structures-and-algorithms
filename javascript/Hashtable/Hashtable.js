@@ -18,6 +18,7 @@ this.table[this.hash(key)]=new LinkedList();
   this.table[this.hash(key)].append({[key]:value});
   this.lengthTable++;
  }
+ 
  //--------------------------------------------------
  contain(key){
   const currentElement = this.hash(key);

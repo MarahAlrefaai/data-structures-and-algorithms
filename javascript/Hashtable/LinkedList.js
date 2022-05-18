@@ -44,9 +44,12 @@ toString(){
 allValues  =allValues+`NULL`;
 return allValues;
 }
-else return "empty list";
+
+
+
+}
 }
 
 
-}
-module.exports=LinkedList;
+
+ module.exports=LinkedList;

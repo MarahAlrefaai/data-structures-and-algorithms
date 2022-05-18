@@ -16,7 +16,9 @@ let arr =["razan", "salam", "batool"];
         expect(hashmap01.contain('razan')).toBe(true); 
         expect(hashmap01.contain('jhadsfjhfj')).toBe(false); 
         expect(hashmap01.get("salam")).toBe("instructor"); 
-        
+        console.log("Once upon a time, there was a brave princess who...")
+        console.log(hashmap01.repeated_word("Once upon a time, there was a brave princess who..."));
+        console.log(hashmap01.count("Once upon a time, there was a brave princess who..."));
      
                 
     })
