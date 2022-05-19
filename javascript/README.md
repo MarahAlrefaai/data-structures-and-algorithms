@@ -42,6 +42,8 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [hash table challenge 30   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/30)
 ------------------------------------
+[hash table repeated words challenge 31   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/31)
+------------
 ### Data Structure: New Implementation
 
 - Create a new folder under the `javascript` level, with the name of the data structure and complete your implementation there
