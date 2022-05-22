@@ -78,27 +78,21 @@ class Hashtable {
   }
   //----------------------------------------------------------
   repeatedWord(text) {
-    let arrWords = text.split(" ");
-    let mappingWords = {};
 
-    for (let i = 0; i < arrWords.length; i++) {
+    const hashTable = new Hashtable(60);
+    let ArrayOfWords = (text.toLowerCase()).split(/[, ]+/);
+    let word = "", wordRepeated = "";
+    for (let i = 0; i < ArrayOfWords.length; i++) {
+      word = ArrayOfWords[i].toLowerCase();
+      if (!hashTable.contain(word)) {
 
-      let counter = mappingWords[arrWords[i]];
-      console.log(" loop 1 counter  value is ====> " +mappingWords[arrWords[i]]+" >>>>>>"+arrWords[i])
-      let appearence = counter ? counter : 0;
-      console.log(" loop 1 appearence  value is ====> " +mappingWords[arrWords[i]]+" >>>>>>"+arrWords[i])
-      if (appearence > 1) { break }
-      mappingWords[arrWords[i]] = appearence + 1;
-      this.set(arrWords[i],arrWords[i])
-    }
-    let mostAppearence;
-    let counter = 1;
-    for (let x in mappingWords) {
-      if (mappingWords[x] > counter) {
-        mostAppearence = x;
-      
+        hashTable.set(ArrayOfWords[i].toLowerCase(), ArrayOfWords[i].toLowerCase());
+      } else {
+        return ArrayOfWords[i];
       }
-    }    return mostAppearence;  }
+    } 
+    return wordRepeated;
+  }
 }
 
 module.exports = Hashtable;
