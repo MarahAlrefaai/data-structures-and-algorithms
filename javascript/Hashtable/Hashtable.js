@@ -76,23 +76,7 @@ class Hashtable {
       return "there is no pacets"
     }
   }
-  //----------------------------------------------------------
-  repeatedWord(text) {
-
-    const hashTable = new Hashtable(60);
-    let ArrayOfWords = (text.toLowerCase()).split(/[, ]+/);
-    let word = "", wordRepeated = "";
-    for (let i = 0; i < ArrayOfWords.length; i++) {
-      word = ArrayOfWords[i].toLowerCase();
-      if (!hashTable.contain(word)) {
-
-        hashTable.set(ArrayOfWords[i].toLowerCase(), ArrayOfWords[i].toLowerCase());
-      } else {
-        return ArrayOfWords[i];
-      }
-    } 
-    return wordRepeated;
-  }
+ 
 }
 
 module.exports = Hashtable;
