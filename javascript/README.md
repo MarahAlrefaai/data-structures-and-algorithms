@@ -42,7 +42,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 ------------------------------------
 [hash table challenge 30   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/30)
 ------------------------------------
-[hash table repeated words challenge 31   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/31)
+[hash table repeated words challenge 31   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/32)
 ------------
 ### Data Structure: New Implementation
 
