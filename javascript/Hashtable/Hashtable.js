@@ -76,29 +76,7 @@ class Hashtable {
       return "there is no pacets"
     }
   }
-  //----------------------------------------------------------
-  repeatedWord(text) {
-    let arrWords = text.split(" ");
-    let mappingWords = {};
-
-    for (let i = 0; i < arrWords.length; i++) {
-
-      let counter = mappingWords[arrWords[i]];
-      console.log(" loop 1 counter  value is ====> " +mappingWords[arrWords[i]]+" >>>>>>"+arrWords[i])
-      let appearence = counter ? counter : 0;
-      console.log(" loop 1 appearence  value is ====> " +mappingWords[arrWords[i]]+" >>>>>>"+arrWords[i])
-      if (appearence > 1) { break }
-      mappingWords[arrWords[i]] = appearence + 1;
-      this.set(arrWords[i],arrWords[i])
-    }
-    let mostAppearence;
-    let counter = 1;
-    for (let x in mappingWords) {
-      if (mappingWords[x] > counter) {
-        mostAppearence = x;
-      
-      }
-    }    return mostAppearence;  }
+ 
 }
 
 module.exports = Hashtable;
