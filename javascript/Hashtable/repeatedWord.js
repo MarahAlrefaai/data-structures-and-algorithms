@@ -18,7 +18,7 @@ else{
       return ArrayOfWords[i];
     }
   }
-  return "there is no repeated words";
+  return "there is no repeated ";
 }
 }
 module.exports = repeatedWord;

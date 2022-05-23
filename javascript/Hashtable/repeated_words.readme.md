@@ -3,7 +3,7 @@
 create function that takes (string ) argument and using hash map finds  and return the first word to occur more than once in a string
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![alt text](witeboard.repeated1.jpg)
+![alt text](./assets/witeboard.repeated1.jpg)
 ## Approach & Efficiency
  What approach did you take? Why? What is the Big O space/time for this approach?
  i used fot loop to loop inside the array of words  and if statement to check the values 
