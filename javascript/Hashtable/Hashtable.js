@@ -11,7 +11,7 @@ class Hashtable {
   //--------------------------------------------------
   set(key, value) {
     //if it's empty
-    console.log("hashed Index " + this.hash(key));
+   // console.log("hashed Index " + this.hash(key));
     if (!this.table[this.hash]) {
       this.table[this.hash(key)] = new LinkedList();
     }
@@ -61,9 +61,10 @@ class Hashtable {
   keys() {
     if (!this.lengthTable == 0) {
       const arrKey = [];
-      this.table.forEach(mypacet => {
+      this.table.forEach((mypacet=0) => {
         let pointer = mypacet.head;
-        while (pointer) {
+        // arrKey.push(pointer.value);
+        while (pointer!=null) {
           for (let i in pointer.value) {
             arrKey.push(i);
           }
@@ -75,6 +76,7 @@ class Hashtable {
     else {
       return "there is no pacets"
     }
+    
   }
  
 }
