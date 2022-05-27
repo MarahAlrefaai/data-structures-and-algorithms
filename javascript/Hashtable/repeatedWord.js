@@ -21,4 +21,5 @@ else{
   return "there is no repeated ";
 }
 }
+
 module.exports = repeatedWord;
