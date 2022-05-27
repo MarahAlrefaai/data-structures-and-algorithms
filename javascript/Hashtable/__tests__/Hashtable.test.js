@@ -1,8 +1,5 @@
 'use strict';
-
-
 const Hashtable = require('../Hashtable');
-
 describe('HashMap', () => {
    it('test set to hash map && keys ', () => {
         const hashmap01=new Hashtable(60);
@@ -16,11 +13,7 @@ let arr =["razan", "salam", "batool"];
         expect(hashmap01.contain('razan')).toBe(true); 
         expect(hashmap01.contain('jhadsfjhfj')).toBe(false); 
         expect(hashmap01.get("salam")).toBe("instructor"); 
-        console.log("Once upon a time, there was a brave princess who...")
-        
-                
-    })
-
-   
+        console.log("Once upon a time, there was a brave princess who...")           
+    })   
 })
 
