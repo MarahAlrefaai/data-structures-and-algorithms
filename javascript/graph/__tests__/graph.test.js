@@ -4,8 +4,41 @@ const Node= require('../vertix');
 const Graph= require('../graph.js');
 describe('test graph',()=>{
 
-  it('test graph ',async()=>{
+ 
+ it('Node can be successfully added to the graph ',async()=>{
+    // expect(g.size()).toBe(0);//before adding     
+    let g = new Graph();
+    expect( g.addNode("A").value).toBe("A");//after adding     
+  })
+  it(' An edge can be successfully added to the graph ',async()=>{
+  
+    let g = new Graph();
+    g.addNode("A");
+    g.addNode("B");
+    g.addNode("C");
+    let A = new Node("A") 
+    let C = new Node("C") 
+    g.addEdge(A, C);
+    console.log( g.get_neighbors("A"))
+    let arr= [ "Edge"+ { vertex: 'C', weight: 0 } ]
+    let n=g.get_neighbors("A")
     
+   expect(typeof n).toBe( typeof arr);
+    
+
+  })
+  it(' A collection of all nodes can be properly retrieved from the graph && The proper size is returned, representing the number of nodes in the graph',async()=>{
+  
+    let g = new Graph();
+    g.addNode("A");
+    g.addNode("B");
+    g.addNode("C");
+    console.log( g.get_nodes())
+    expect(g.get_nodes().length).toEqual(3)
+    
+  })
+  it(' All appropriate neighbors can be retrieved from the graph',async()=>{
+  
     let g = new Graph();
     g.addNode("A");
     g.addNode("B");
@@ -22,9 +55,23 @@ describe('test graph',()=>{
     g.addEdge(A, C);
     g.addEdge(A, B);
     g.addEdge(D, E);
-    expect(g.get_neighbors("A")+"").toBe("[object Object],[object Object]");
-    expect(g.size()).toBe(5);    
-    expect(g.get_nodes().length).toEqual(5)
+  
+    expect(g.get_neighbors("A").length).toBe(2);
+
+  })
+  it('The proper size is returned, representing the number of nodes in the graph && An empty graph properly returns null',async()=>{
+  
+    let g = new Graph();
+    expect(g.size()).toBe(null); 
+    
+    g.addNode("A");
+    g.addNode("B");
+    g.addNode("C");
+    g.addNode("D");
+    g.addNode("E");
+        
+    expect(g.size()).toBe(5); 
+   
   })
 })
 
