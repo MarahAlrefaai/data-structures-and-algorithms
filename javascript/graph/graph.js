@@ -32,6 +32,7 @@ class Graph {
   get_neighbors(vertex) {
 
     if (this.nodes[vertex]) {
+     // console.log(this.nodes[vertex])
       return this.nodes[vertex];
     }
   }
@@ -45,7 +46,7 @@ class Graph {
   if (this.sizeOfGraph > 1) {
     return this.sizeOfGraph ;
   }else {
-    return "empty"
+    return null
   }
 }
  //-------------------------------------------------

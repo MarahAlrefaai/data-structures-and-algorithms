@@ -35,7 +35,7 @@ Arguments: none
 Returns the total number of nodes in the graph
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-add_node:i didn't ude any loops so the time and space BigO(5)
-add_edge:i used if statement time and space BigO(2)
+add_node:i didn't ude any loops so the time and space BigO(1)
+add_edge:i used if statement time and space BigO(1)
 get_nodes:didn't ude any loops so the time and space BigO(1)
 size:i used if statement time and space BigO(1)
