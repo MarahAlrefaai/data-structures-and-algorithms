@@ -79,6 +79,9 @@ class Hashtable {
     
   }
  
+  
+    l
+
 }
 
 module.exports = Hashtable;

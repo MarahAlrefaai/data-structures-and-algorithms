@@ -1,8 +1,8 @@
-const HashTable = require('./Hashtable.js')
 
 function leftJoin(table1, table2) {
 
   let result = [];
+
   let tableKeys = (table1.keys());
   let tableKeys2 = (table2.keys());
   for (let i = 0; i < tableKeys.length; i++) {
@@ -15,6 +15,5 @@ function leftJoin(table1, table2) {
   }
   return result;
 }
-
 
 module.exports = leftJoin;

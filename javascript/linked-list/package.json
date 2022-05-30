@@ -1,7 +1,6 @@
 {
   "name": "linked-list",
   "version": "1.0.0",
-  "description": "",
   "main": "linked-list.js",
   "scripts": {
     "start": "node linked-list.js",
@@ -11,7 +10,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^27.5.1"
-  }
+  },
+  "description": ""
 }

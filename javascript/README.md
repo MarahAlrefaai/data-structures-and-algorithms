@@ -8,8 +8,48 @@
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
 
 ### table of content 
-[title](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/main/javascript/arrayReverse/challenge_readme.md)
-
+[reverse array](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/main/javascript/arrayReverse/challenge_readme.md)
+------------------------------------
+[insert shift array](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/array-insert-shift/javascript/arrayInsertShift/array-insert-shift.md)
+------------------------------------
+[binary search array](https://github.com/MarahAlrefaai/data-structures-and-algorithms/blob/array-binary-search/javascript/array-binary-search/array-binary-search.md)
+------------------------------------
+[Linked List](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/4)
+------------------------------------
+[Linked List insertions](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/7)
+------------------------------------
+[Linked List Kth](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/8)
+------------------------------------
+[Linked List Zip](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/10)
+------------------------------------
+[stack-queue](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/13)
+------------------------------------
+[pseudoqueue](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/17)
+------------------------------------
+[AnimalShelterQueue](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/21)
+------------------------------------
+[validate-brackets](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/22)
+------------------------------------
+[binary tree ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/26)
+------------------------------------
+[binary tree max function  ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/24)
+------------------------------------
+[binary tree breadthFirst function  ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/25)
+------------------------------------
+[tracking code for sorting array   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/28)
+------------------------------------
+[tracking code for QuickSort array   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/29)
+------------------------------------
+[hash table challenge 30   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/30)
+------------------------------------
+[hash table repeated words challenge 31   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/32)
+------------
+[hash table tree challenge 32   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/34)
+---
+[hash table Lift Join  challenge 33   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/33)
+---
+[graph  challenge 35   ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/36)
+---
 ### Data Structure: New Implementation
 
 - Create a new folder under the `javascript` level, with the name of the data structure and complete your implementation there
