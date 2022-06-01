@@ -52,6 +52,8 @@ Each type of code challenge has slightly different instructions. Please refer to
 ---
 [graph  breadth_first challenge 36  ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/38)
 ---
+[graph  graph-business-trip challenge 37  ](https://github.com/MarahAlrefaai/data-structures-and-algorithms/pull/39)
+---
 ### Data Structure: New Implementation
 
 - Create a new folder under the `javascript` level, with the name of the data structure and complete your implementation there
