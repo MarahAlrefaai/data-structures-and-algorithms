@@ -18,12 +18,23 @@ class Graph {
   }
 
   //-------------------------------------------------
-  addEdge(node1, node2) {
-
+  addEdge(node1,weight, node2) {
+    if(weight==null){weight=0}
     if (this.nodes[node1.value] || !this.nodes[node2.value]) {
 
-      this.nodes[node1.value].push(new Edge(node2.value, 0, node2));
-      this.nodes[node2.value].push(new Edge(node1.value, 0, node1));
+      this.nodes[node1.value].push(new Edge(node2.value, weight, node2));
+      this.nodes[node2.value].push(new Edge(node1.value, weight, node1));
+
+    } else {
+      return 'one or both vertex is not existed'
+    }
+  }
+  //-------------------------------------------------
+  addEdgeDirectedGraph(node1,weight ,node2) {
+if(weight==null){weight=0}
+    if (this.nodes[node1.value] || !this.nodes[node2.value]) {
+
+      this.nodes[node1.value].push(new Edge(node2.value,weight, node2));
 
     } else {
       return 'one or both vertex is not existed'
@@ -63,7 +74,8 @@ class Graph {
     Qnodes.enqueue(startNode);
     while (!Qnodes.isempty()) {
       // console.log(Qnodes.peekNode().value)
-      visited.push(Qnodes.peekNode().value);
+      if(!(visited.includes(Qnodes.peekNode().value))){
+      visited.push(Qnodes.peekNode().value);}
       let top = Qnodes.dequeue()
       //  console.log( Qnodes.length)
       //  console.log(top)
@@ -84,6 +96,8 @@ class Graph {
 
     return visited;
   }
+
+ 
 }
 
 module.exports = Graph;
