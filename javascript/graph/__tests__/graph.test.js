@@ -86,7 +86,10 @@ describe('test graph',()=>{
     g.addEdge(A, C);
     g.addEdge(A, B);
     g.addEdge(B, E);
-    expect(g.breadth_first(A).length).toBe(7);  
+    expect(g.breadth_first(A).length).toBe(4);  
+    //console.log(g.breadth_first(A))
 })
+
+
 
 })
