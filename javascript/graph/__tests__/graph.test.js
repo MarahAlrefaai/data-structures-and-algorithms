@@ -5,7 +5,7 @@ const Graph= require('../graph.js');
 describe('test graph',()=>{
 
  
-/* it('Node can be successfully added to the graph ',async()=>{
+it('Node can be successfully added to the graph ',async()=>{
     // expect(g.size()).toBe(0);//before adding     
     let g = new Graph();
     expect( g.addNode("A").value).toBe("A");//after adding     
@@ -36,8 +36,8 @@ describe('test graph',()=>{
     console.log( g.get_nodes())
     expect(g.get_nodes().length).toEqual(3)
     
-  })*/
-  /*it(' All appropriate neighbors can be retrieved from the graph',async()=>{
+  })
+  it(' All appropriate neighbors can be retrieved from the graph',async()=>{
   
     let g = new Graph();
     let first =g.addNode("A");
@@ -88,7 +88,7 @@ describe('test graph',()=>{
     g.addEdge(B, E);
     expect(g.breadth_first(A).length).toBe(4);  
     //console.log(g.breadth_first(A))
-})*/
+})
 
 it('  graph',async()=>{
   
@@ -110,8 +110,8 @@ it('  graph',async()=>{
   g.addEdge(D,0,F);
   g.addEdge(D,0,H);
   g.addEdge(D,0,E);
-  //expect(g.graph_depth_first(A).length).toBe(4);  
- console.log(g.graph_depth_first(A))
+   
+ 
 })
 
 })
