@@ -26,8 +26,10 @@ else{
 pop(){
 if(this.length==0){return "it's allredy empty"}
 else{
+  let re=this.top
   this.top=this.top.next;
   this.length--;
+  return re;
 }  
 }
 //----------------------------------------------

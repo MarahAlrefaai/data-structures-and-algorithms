@@ -3,6 +3,8 @@ const Edge = require('./edge.js');
 const Node = require('./vertix.js')
 const queue = require('../stack-and-queue/queue.js')
 const Stack = require('../stack-and-queue/stack.js')
+let stack=new Stack();
+let visited_dfs=[];
 class Graph {
   constructor() {
     this.nodes = [];
@@ -97,13 +99,24 @@ if(weight==null){weight=0}
     return visited;
   }
 //---------------------------------------------------------
-  graph_depth_first(startNode){
-    let visited = [];
-    let stack = new Stack();
-    stack.push(startNode.value);
-    visited.push(startNode.value);
-    
-  }
+  graph_depth_first (node)  { 
+    stack.push(node.value);
+    while (!stack.isempty()) {
+       node = stack.pop();
+      console.log(node)
+      console.log(visited_dfs[node.value])
+       if (visited_dfs[node.value] == null) {
+          visited_dfs[node.value] = true;
+          console.log(`we visited_dfs ${node.value}`)
+          for (let j = 0; j < (this.get_neighbors(node.value)).length; j++) {
+            console.log(this.get_neighbors(node.value)[j])
+             if (!visited_dfs.includes(this.get_neighbors(node.value)[j].value)){
+                 stack.push(this.get_neighbors(node.value)[j]);
+             }else{console.log("no")}
+           }
+      }
+    }
 }
 
+}
 module.exports = Graph;
