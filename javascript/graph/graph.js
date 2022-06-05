@@ -2,6 +2,7 @@
 const Edge = require('./edge.js');
 const Node = require('./vertix.js')
 const queue = require('../stack-and-queue/queue.js')
+const Stack = require('../stack-and-queue/stack.js')
 class Graph {
   constructor() {
     this.nodes = [];
@@ -47,6 +48,7 @@ if(weight==null){weight=0}
       // console.log("get_neighbors ==>"+this.nodes[vertex])
       return this.nodes[vertex];
     }
+    else return [];
   }
   //-------------------------------------------------
   get_nodes() {
@@ -83,7 +85,6 @@ if(weight==null){weight=0}
       //console.log(child.pop());
       while (child.length > 0) {
         // console.log(child.length);
-
         let n = child.pop().node
         // console.log("this is n ");
         // console.log(n);
@@ -93,11 +94,16 @@ if(weight==null){weight=0}
     }
     console.log("visited array " + visited);
     //console.log(visited.length);
-
     return visited;
   }
-
- 
+//---------------------------------------------------------
+  graph_depth_first(startNode){
+    let visited = [];
+    let stack = new Stack();
+    stack.push(startNode.value);
+    visited.push(startNode.value);
+    
+  }
 }
 
 module.exports = Graph;

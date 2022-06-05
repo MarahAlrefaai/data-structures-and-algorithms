@@ -57,6 +57,10 @@ peek(){
   if(this.length==0){return "empry stack"}
   else{return this.front.value;}
 }
+peekNode(){
+  if(this.length==0){return "empry stack"}
+  else{return this.front;}
+}
 //----------------------------------------------
 //isempty
 isempty(){
