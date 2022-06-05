@@ -37,7 +37,7 @@ describe('test graph',()=>{
     expect(g.get_nodes().length).toEqual(3)
     
   })*/
-  it(' All appropriate neighbors can be retrieved from the graph',async()=>{
+  /*it(' All appropriate neighbors can be retrieved from the graph',async()=>{
   
     let g = new Graph();
     let first =g.addNode("A");
@@ -88,8 +88,30 @@ describe('test graph',()=>{
     g.addEdge(B, E);
     expect(g.breadth_first(A).length).toBe(4);  
     //console.log(g.breadth_first(A))
+})*/
+
+it('  graph',async()=>{
+  
+  let g = new Graph();
+  let A =g.addNode("A");
+  let B =g.addNode("B");
+  let C =g.addNode("C");
+  let D =g.addNode("D");
+  let E =g.addNode("E");
+  let F =g.addNode("F");
+  let H =g.addNode("H");
+  let G =g.addNode("G");
+
+  g.addEdge(A,0,B);
+  g.addEdge(A,0,D);
+  g.addEdge(D,0,B);
+  g.addEdge(B,0,C);
+  g.addEdge(C,0,G);
+  g.addEdge(D,0,F);
+  g.addEdge(D,0,H);
+  g.addEdge(D,0,E);
+  //expect(g.graph_depth_first(A).length).toBe(4);  
+ console.log(g.graph_depth_first(A))
 })
-
-
 
 })

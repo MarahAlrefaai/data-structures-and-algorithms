@@ -43,6 +43,12 @@ peek(){
   else{return this.top.value;}
 }
 //----------------------------------------------
+//peek
+peekNode(){
+  if(this.length==0){return "empry stack"}
+  else{return this.top;}
+}
+//----------------------------------------------
 //tostring
 tostring(){
 let stackValues="";
