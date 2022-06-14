@@ -63,6 +63,7 @@ if(weight==null){weight=0}
         return this.collectionOfNodes[i];
     }
   }
+  
   //-------------------------------------------------
   size() {
     if (this.sizeOfGraph > 1) {
@@ -77,25 +78,15 @@ if(weight==null){weight=0}
     let Qnodes = new queue();
     Qnodes.enqueue(startNode);
     while (!Qnodes.isempty()) {
-      // console.log(Qnodes.peekNode().value)
       if(!(visited.includes(Qnodes.peekNode().value))){
       visited.push(Qnodes.peekNode().value);}
       let top = Qnodes.dequeue()
-      //  console.log( Qnodes.length)
-      //  console.log(top)
       let child = this.get_neighbors(top.value)
-      //console.log(child.pop());
       while (child.length > 0) {
-        // console.log(child.length);
         let n = child.pop().node
-        // console.log("this is n ");
-        // console.log(n);
         Qnodes.enqueue(n)
-      }
-
-    }
+      }}
     console.log("visited array " + visited);
-    //console.log(visited.length);
     return visited;
   }
 //---------------------------------------------------------
